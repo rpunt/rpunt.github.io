@@ -10,7 +10,8 @@ body {
 	color: #000;
 }
 
-p,h3 {
+/* p,h3 { */
+p {
 	text-decoration: none;
 	margin-bottom: 15px;
 }
@@ -81,12 +82,12 @@ input,.output {
 
 #menu ul li a:hover {
         background: #FFF;
-        border-left: 8px solid #003878;
+        border-right: 8px solid #003878;
 }
 
 #content {
 	color: #000;
-/* 	width: 650px; */
+	width: 650px;
 	margin-top: 10px;
 	margin-left: 10px;
 	float: left;
