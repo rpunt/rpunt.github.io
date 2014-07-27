@@ -35,6 +35,7 @@ $(function(){
 	var extracurricular_fee = 40;
 	var members;
 	var numAttendees;
+	var ontime_registration_deduction = 50;
 	var assignment_book_total = 0; 
 	var catechism_total = 0; 
 	var bible_total = 0; 
@@ -132,7 +133,7 @@ $(function(){
 				$("#attendee_legend_" + (i)).html($(this).val());
 				var student = {
 					"name": "",
-					"grade": -1,
+					"grade": "x",
 					"additional_fees": {
 						"assignment_book": 0,
 						"catechism": 0,
@@ -148,6 +149,7 @@ $(function(){
 			console.log("created student at index " + index);
 			console.log(family.students[index]);
 		});
+		
 		$(".grade_selector").each(function(index) {
 			var i = index + 1;
 			console.log("index on grade_selector: " + index);
@@ -168,11 +170,11 @@ $(function(){
 					$("#breakdown_extra_curricular").html(formatCurrency(family.students[index].additional_fees.extra_curricular));
 					$("#bible_" + i).attr("disabled",false);
 					$("#hymnal_" + i).attr("disabled",false); 
-					if (family.students[index].grade <= 6) { 
-						$("#assignment_book_" + i).attr("disabled",false); 
-					}
 					if (family.students[index].grade >= 5) { 
 						$("#catechism_book_" + i).attr("disabled",false); 
+					}
+					if (family.students[index].grade <= 6) { 
+						$("#assignment_book_" + i).attr("disabled",false); 
 					}
 				}
 			};
@@ -283,7 +285,7 @@ $(function(){
 	
 	$("#on_time_registration").click(function() {
 		if (this.checked) {
-			family.deductions.ontime_registration = 50;
+			family.deductions.ontime_registration = ontime_registration_deduction * numAttendees;
 		} else {
 			family.deductions.ontime_registration = 0;
 		}
@@ -336,3 +338,59 @@ $(function(){
 		return "$" + input;
 	}
 });
+/*
+	function stepTwoTest() {
+		if (($.stepTwoComplete_one == "complete") && ($.stepTwoComplete_two == "complete")) {
+			$("#step_2")
+			.animate({
+				paddingBottom: 120
+			})
+			.css({
+				"background-image": "url(images/check.png)",
+				"background-position": "bottom center",
+				"background-repeat": "no-repeat"
+			});
+			$("#step_3").css({
+				opacity: 1
+			});
+			$("#step_3 legend").css({
+				opacity: 1 // For dumb Internet Explorer
+			});
+		}
+	};
+*/
+	
+/*
+	$("#step_2 input[name=company_name_toggle_group]").click(function(){
+		$.stepTwoComplete_one = "complete"; 
+		if ($("#company_name_toggle_on:checked").val() == 'on') {
+			$("#company_name_wrap").slideDown();
+		} else {
+			$("#company_name_wrap").slideUp();
+		};
+		stepTwoTest();
+	});
+*/
+	
+/*
+	$("#step_2 input[name=special_accommodations_toggle]").click(function(){
+		$.stepTwoComplete_two = "complete"; 
+		if ($("#special_accommodations_toggle_on:checked").val() == 'on') {
+			$("#special_accommodations_wrap").slideDown();
+		} else {
+			$("#special_accommodations_wrap").slideUp();
+		};
+		stepTwoTest();
+	});
+*/
+	
+/*
+	$("#rock").click(function(){
+		if (this.checked && $("#num_attendees option:selected").text() != 'Please Choose'
+		  	&& $.stepTwoComplete_one == 'complete' && $.stepTwoComplete_two == 'complete') {
+				$("#submit_button").attr("disabled",false);
+			} else {
+				$("#submit_button").attr("disabled",true);
+		}
+	});
+*/	
