@@ -6,7 +6,7 @@ $(function(){
 	// Sometimes using the .hide(); function isn't as ideal as it uses display: none; 
 	// which has problems with some screen readers. Applying a CSS class to kick it off the
 	// screen is usually prefered, but since we will be UNhiding these as well, this works.
-	$(".name_wrap, #company_name_wrap, #special_accommodations_wrap, #tuition_assistance_wrap").hide();
+	$(".name_wrap, #company_name_wrap, #special_accommodations_wrap, #tuition_assistance_wrap, #additional_gift_wrap").hide();
 	
 	// Reset form elements back to default values on page load
 	// ... don't want browser remembering values like checked checkboxes in this case
@@ -37,6 +37,7 @@ $(function(){
 	var hymnal_fee = 21.5;
 	var extracurricular_fee = 40;
 	var members;
+	var additional_gift = 0;
 	var numAttendees = 0;
 	var numPreschool = 0;
 	var numK8 = 0;
@@ -105,8 +106,6 @@ $(function(){
 			$("#students_optional_fees_wrap").append('<input type="checkbox" name="hymnal_' + i + '" id="hymnal_' + i + '">&nbsp;');
 			$("#students_optional_fees_wrap").append('<label for="hymnal_' + i + '">Hymnal</label><br />');
 			$("#students_optional_fees_wrap").append('</div>');
-			
-			$("#students_optional_fees_wrap").append('<hr />');
         }
         $("#students_optional_fees_wrap").slideDown();
         family.required_fees.pto_fee = (numAttendees > 1) ? 30 : 20;
@@ -293,6 +292,21 @@ $(function(){
 		updateDisplay();
 	});
 	
+	$("#additional_gift").click(function(){
+		if ($("#additional_gift:checked").val() == 'on') {
+			$("#additional_gift_wrap").slideDown();
+		} else {
+			$("#additional_gift_wrap").slideUp();
+			family.additional_gift = 0;
+		};
+		updateDisplay();
+	});
+	
+	$(".additional_gift_amount").keyup(function() {
+		family.additional_gift = parseInt($("#additional_gift_amount").val());
+		updateDisplay();
+	});
+	
 	$("#calculate_total").click(function() {
 		calculateTotal();
 		updateDisplay();
@@ -312,12 +326,6 @@ $(function(){
 		
 		family.total_tuition = family.pktuition + family.k8tuition;
 		
-/*
-		console.log("K8 tuition: " + family.k8tuition);
-		console.log("PK tuition: " + family.pktuition);
-		console.log("T  tuition: " + family.total_tuition);
-*/
-		
 		family.required_fees.book_fee = (numK8 * k8_book_fee) + (numPreschool * pk_book_fee);
 		family.required_fees.registration_fee = (numK8 * k8_registration_fee) + (numPreschool * pk_registration_fee);
 		family.required_fees.tech_fee = (numK8 + numPreschool) * tech_fee;
@@ -332,8 +340,8 @@ $(function(){
 	};
 	
 	function calculateTotal() {
-		var required_fees = family.k8tuition + family.pktuition + family.required_fees.k8_registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
-		var additional_fees = assignment_book_total + catechism_total + bible_total + hymnal_total + extracurricular_total;
+		var required_fees = family.k8tuition + family.pktuition + family.required_fees.registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
+		var additional_fees = assignment_book_total + catechism_total + bible_total + hymnal_total + extracurricular_total + family.additional_gift;
 		var deductions = family.deductions.ontime_registration + family.deductions.paid_in_full + family.deductions.tuition_assistance;
 		console.log("required fees: " + required_fees);
 		console.log("additional fees: " + additional_fees);
@@ -344,18 +352,23 @@ $(function(){
 	}
 	
 	function updateDisplay() {
-		$("#breakdown_k8_registration_fee").html(formatCurrency(family.required_fees.k8_registration_fee));
+		$("#breakdown_registration_fee").html(formatCurrency(family.required_fees.registration_fee));
 		$("#breakdown_k8tuition").html(formatCurrency(family.k8tuition));
 		$("#breakdown_preschool_tuition").html(formatCurrency(family.pktuition));
 		$("#breakdown_book_fee").html(formatCurrency(family.required_fees.book_fee));
 		$("#breakdown_tech_fee").html(formatCurrency(family.required_fees.tech_fee));
 		$("#breakdown_pto").html(formatCurrency(family.required_fees.pto_fee));
 		
+		$("#breakdown_additional_gift").html(formatCurrency(family.additional_gift));
+		
 		$("#breakdown_paid_in_full").html(formatCurrency(family.deductions.paid_in_full));
 		$("#breakdown_ontime_registration").html(formatCurrency(family.deductions.ontime_registration));
 		$("#breakdown_tuition_assistance").html(formatCurrency(family.deductions.tuition_assistance));
 		
 		$("#breakdown_grand_total").html(formatCurrency(total));
+		
+		$("#print_family_name").html("<h4>" + $("#family_name").val() + "</h4>");
+		$("#print_email_address").html("<h4>" + $("#email_address").val() + "</h4>");
 	}
 	
 	function formatCurrency(input) {

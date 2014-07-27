@@ -3,7 +3,6 @@
 <!-- http://css-tricks.com/examples/SeminarRegTutorial/ -->
 <head>
 	<meta charset="UTF-8">
-	
 	<title>2014/15 School Year Registration</title>
 	
 	<link rel="stylesheet" media="all" href="bootstrap.min.css">
@@ -36,13 +35,21 @@
 	<form action="index.html" method="post">
 		<fieldset id="step_1" class="hidden-print">
 			<legend>Students</legend>
+			<label for="family_name">Family</label>
+			<input type="text" id="family_name" />
+			
+			<br />
+			
+			<label for="email_address">Email</label>
+			<input type="text" id="email_address" />
+			
 			<label for="members">Members?</label>
 			<select id="members">
 				<option id="opt_y" value="yes">Yes</option>
 				<option id="opt_n" value="no">No</option>
 			</select>
 		
-			<br /><br />
+			<br />
 			
 			<label for="num_attendees">How many students will be attending?</label>
 			<select id="num_attendees">
@@ -59,7 +66,7 @@
 				<option id="opt_10" value="10">10</option>
 			</select>
 		
-			<br /><br />
+			<br />
 			
 <!-- 			<h3>Please provide full names:</h3> -->
 			<div id="attendee_1_wrap" class="name_wrap push">
@@ -243,7 +250,7 @@
 			</div>
 		
 		<br />
-<!--         <input type="button" id="dump_button" value="Dump JSON" /> -->
+        <input type="button" id="dump_button" value="Dump JSON" />
 		<input type="button" id="add_students" value="Add Students" />
 		</fieldset>
 	
@@ -267,9 +274,22 @@
 			<div id="tuition_assistance_wrap">
 				<input type="text" id="tuition_assistance_amount" class="tuition_assistance_amount" />
 			</div>
+			
+			<input type="checkbox" id="additional_gift" />
+			<label for="additional_gift">Additional Gift</label>
+			<br />
+			<div id="additional_gift_wrap">
+				<input type="text" id="additional_gift_amount" class="additional_gift_amount" />
+			</div>
+			
 			<input type="button" id="calculate_total" value="Calculate Total" />
 		</fieldset>
-		
+
+		<div id="family_info">
+			<div id="print_family_name"></div>
+			<div id="print_email_address"></div>
+		</div>
+				
 		<fieldset id="step_4">
 			<legend>Tuition Breakdown</legend>
 			<div id="tuition_breakdown_wrap">
@@ -289,7 +309,7 @@
 					<tr><td>&nbsp;</td><td>Bibles:</td><td id="breakdown_bible" class="money"></td></tr>
 					<tr><td>&nbsp;</td><td>Hymnals:</td><td id="breakdown_hymnal" class="money"></td></tr>
 					<tr><td>&nbsp;</td><td>Extra Curriculars:</td><td id="breakdown_extra_curricular" class="money"></td></tr>
-<!-- 					<tr><td>&nbsp;</td><td>Other:</td><td id="breakdown_other" class="money"></td></tr> -->
+					<tr><td>&nbsp;</td><td>Additional Gift:</td><td id="breakdown_additional_gift" class="money"></td></tr>
 					<!-- optional fees -->
 <!--
 					<tr><td colspan="3"><strong>Optional Fees</strong></td></tr>
@@ -306,6 +326,7 @@
 				<input type="submit" id="submit_button" class="push hidden-print" value="Complete Registration" onClick="window.print()" />
 			</div>
 		</fieldset>
+
 	</form>
 </div>
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->

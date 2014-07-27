@@ -4,7 +4,7 @@
 
 body { 
 	font-family: Helvetica, Arial, Sans-Serif;
-	background: #2c2c2c url(../images/bg.jpg) top center no-repeat; 
+	background: #2c2c2c url(images/bg.jpg) top center no-repeat; 
 }
 
 #page-wrap { 
@@ -111,6 +111,10 @@ option {
 	width: 100%; height: 100px; 
 }
 
+#family_info {
+	visibility: hidden;
+}
+
 @media print {
 	fieldset#step_4 {
 		float: left;
@@ -120,5 +124,9 @@ option {
 	
 	#breakdown_grand_total {
 		font-weight: bolder;
+	}
+	
+	#family_info {
+		visibility: visible;
 	}
 }
