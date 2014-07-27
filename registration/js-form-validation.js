@@ -168,8 +168,10 @@ $(function(){
 				if (family.students[index].grade >= 3) {
 					family.students[index].additional_fees.extra_curricular = 40; 
 /* 					$("#breakdown_extra_curricular").html(formatCurrency(family.students[index].additional_fees.extra_curricular)); */
-					$("#bible_" + i).attr("disabled",false);
 					$("#hymnal_" + i).attr("disabled",false); 
+					if (family.students[index].grade >= 4) {
+						$("#bible_" + i).attr("disabled",false);
+					}
 					if (family.students[index].grade >= 5) { 
 						$("#catechism_book_" + i).attr("disabled",false); 
 					}
