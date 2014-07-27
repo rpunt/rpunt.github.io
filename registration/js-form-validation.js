@@ -26,8 +26,10 @@ $(function(){
 	var nonmember_tuition = 3400;
 	var preschool_tuition = 925;
 	var pto_fee = 30;
-	var registration_fee = 130;
-	var book_fee = 45;
+	var k8_registration_fee = 130;
+	var pk_registration_fee = 85;
+	var k8_book_fee = 45;
+	var pk_book_fee = 20;
 	var tech_fee = 40;
 	var assignment_book_fee = 3.65;
 	var catechism_book_fee = 18.5;
@@ -316,9 +318,9 @@ $(function(){
 		console.log("T  tuition: " + family.total_tuition);
 */
 		
-		family.required_fees.book_fee = numK8 * book_fee;
-		family.required_fees.registration_fee = (numK8 + numPreschool) * registration_fee;
-		family.required_fees.tech_fee = numK8 * tech_fee;
+		family.required_fees.book_fee = (numK8 * k8_book_fee) + (numPreschool * pk_book_fee);
+		family.required_fees.registration_fee = (numK8 * k8_registration_fee) + (numPreschool * pk_registration_fee);
+		family.required_fees.tech_fee = (numK8 + numPreschool) * tech_fee;
 
 		if ($("#paid_in_full:checked").val() == 'on') { 
 			family.deductions.paid_in_full = family.total_tuition * .05;
@@ -330,7 +332,7 @@ $(function(){
 	};
 	
 	function calculateTotal() {
-		var required_fees = family.k8tuition + family.pktuition + family.required_fees.registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
+		var required_fees = family.k8tuition + family.pktuition + family.required_fees.k8_registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
 		var additional_fees = assignment_book_total + catechism_total + bible_total + hymnal_total + extracurricular_total;
 		var deductions = family.deductions.ontime_registration + family.deductions.paid_in_full + family.deductions.tuition_assistance;
 		console.log("required fees: " + required_fees);
@@ -342,7 +344,7 @@ $(function(){
 	}
 	
 	function updateDisplay() {
-		$("#breakdown_registration_fee").html(formatCurrency(family.required_fees.registration_fee));
+		$("#breakdown_k8_registration_fee").html(formatCurrency(family.required_fees.k8_registration_fee));
 		$("#breakdown_k8tuition").html(formatCurrency(family.k8tuition));
 		$("#breakdown_preschool_tuition").html(formatCurrency(family.pktuition));
 		$("#breakdown_book_fee").html(formatCurrency(family.required_fees.book_fee));
@@ -360,60 +362,3 @@ $(function(){
 		return "$" + input;
 	}
 });
-
-/*
-	function stepTwoTest() {
-		if (($.stepTwoComplete_one == "complete") && ($.stepTwoComplete_two == "complete")) {
-			$("#step_2")
-			.animate({
-				paddingBottom: 120
-			})
-			.css({
-				"background-image": "url(images/check.png)",
-				"background-position": "bottom center",
-				"background-repeat": "no-repeat"
-			});
-			$("#step_3").css({
-				opacity: 1
-			});
-			$("#step_3 legend").css({
-				opacity: 1 // For dumb Internet Explorer
-			});
-		}
-	};
-*/
-	
-/*
-	$("#step_2 input[name=company_name_toggle_group]").click(function(){
-		$.stepTwoComplete_one = "complete"; 
-		if ($("#company_name_toggle_on:checked").val() == 'on') {
-			$("#company_name_wrap").slideDown();
-		} else {
-			$("#company_name_wrap").slideUp();
-		};
-		stepTwoTest();
-	});
-*/
-	
-/*
-	$("#step_2 input[name=special_accommodations_toggle]").click(function(){
-		$.stepTwoComplete_two = "complete"; 
-		if ($("#special_accommodations_toggle_on:checked").val() == 'on') {
-			$("#special_accommodations_wrap").slideDown();
-		} else {
-			$("#special_accommodations_wrap").slideUp();
-		};
-		stepTwoTest();
-	});
-*/
-	
-/*
-	$("#rock").click(function(){
-		if (this.checked && $("#num_attendees option:selected").text() != 'Please Choose'
-		  	&& $.stepTwoComplete_one == 'complete' && $.stepTwoComplete_two == 'complete') {
-				$("#submit_button").attr("disabled",false);
-			} else {
-				$("#submit_button").attr("disabled",true);
-		}
-	});
-*/	
