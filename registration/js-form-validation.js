@@ -104,9 +104,7 @@ $(function(){
 			$("#students_optional_fees_wrap").append('<label for="hymnal_' + i + '">Hymnal</label><br />');
 			$("#students_optional_fees_wrap").append('</div>');
 			
-			$("#students_optional_fees_wrap").append('<br />');
 			$("#students_optional_fees_wrap").append('<hr />');
-			$("#students_optional_fees_wrap").append('<br />');
         }
         $("#students_optional_fees_wrap").slideDown();
         family.required_fees.pto_fee = (numAttendees > 1) ? 30 : 20;
