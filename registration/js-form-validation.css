@@ -110,3 +110,15 @@ option {
 #special_accommodations_wrap textarea { 
 	width: 100%; height: 100px; 
 }
+
+@media print {
+	fieldset#step_4 {
+		float: left;
+		font-size: larger;
+		width: 100%;
+	}
+	
+	#breakdown_grand_total {
+		font-weight: bolder;
+	}
+}

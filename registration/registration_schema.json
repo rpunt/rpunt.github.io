@@ -3,6 +3,7 @@
 		"members": "yes",
 		"additional_gift": 0,
 		"tuition": 0,
+		"preschool_tuition": 0,
 		"required_fees": {
 			"pto_fee": 30,
 			"registration_fee": 130,

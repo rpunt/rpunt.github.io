@@ -24,6 +24,7 @@ $(function(){
 	// MTO price list
 	var member_tuition = 1320;
 	var nonmember_tuition = 3400;
+	var preschool_tuition = 925;
 	var pto_fee = 30;
 	var registration_fee = 130;
 	var book_fee = 45;
@@ -34,7 +35,9 @@ $(function(){
 	var hymnal_fee = 21.5;
 	var extracurricular_fee = 40;
 	var members;
-	var numAttendees;
+	var numAttendees = 0;
+	var numPreschool = 0;
+	var numK8 = 0;
 	var ontime_registration_deduction = 50;
 	var assignment_book_total = 0; 
 	var catechism_total = 0; 
@@ -42,11 +45,11 @@ $(function(){
 	var hymnal_total = 0;
 	var extracurricular_total = 0;
 	var total = 0;
-	
 	var family = {
-		"members": "",
+		"members": $("#members").val(),
 		"additional_gift": 0,
-		"tuition": 0,
+		"k8tuition": 0,
+		"pktuition": 0,
 		"required_fees": {
 			"pto_fee": 0,
 			"registration_fee": 0,
@@ -61,21 +64,18 @@ $(function(){
 		}
 	};
 	
-	// Fade out steps 2 and 3 until ready
 	$("#step_2, #step_3").css({ opacity: 0.3 });
-	
 	$.stepTwoComplete_one = "not complete";
 	$.stepTwoComplete_two = "not complete"; 
 	
-	family.members = $("#members").val();
-	family.students = [];
+/* 	family.members = $("#members").val(); */
+/* 	family.students = []; */
 	
 	$("#members").change(function() {
 		family.members = $("#members").val();
 		recalculateTuition();
 	});
 	
-	// number of students
 	$("#num_attendees").change(function() {	
 		$(".name_wrap").slideUp().find("input").removeClass("active_name_field");
         numAttendees = $("#num_attendees").val();
@@ -109,23 +109,20 @@ $(function(){
 			$("#students_optional_fees_wrap").append('<br />');
         }
         $("#students_optional_fees_wrap").slideDown();
-        
         family.required_fees.pto_fee = (numAttendees > 1) ? 30 : 20;
-        $("#breakdown_pto").html(formatCurrency(family.required_fees.pto_fee));
-		
-		recalculateTuition();		
-		
-		console.log(family);
+		recalculateTuition();
+		updateDisplay();
 	});
-	
-	// Check completeness of fields quickly
-/* 	$(".name_input").keyup(function() { */
+
 	$("#add_students").click(function() {
 		var all_complete = true;
 		family.students = [];
+		family.k8tuition = 0;
+		family.pktuition = 0;
+		numPreschool = 0;
+		numK8 = 0;
 		
 		$(".active_name_field").each(function(index) {
-			console.log("index on active_name_field: " + index);
 			var i = index + 1;
 			if ($(this).val() == '' ) {
 				all_complete = false;
@@ -146,28 +143,31 @@ $(function(){
 				student.name = $(this).val();
 				family.students.push(student);
 			}
-			console.log("created student at index " + index);
-			console.log(family.students[index]);
 		});
 		
 		$(".grade_selector").each(function(index) {
 			var i = index + 1;
-			console.log("index on grade_selector: " + index);
 			if ($(this).val() == 'x' ) {
 				all_complete = false;
 			} else { 
 				family.students[index].grade = parseInt($(this).val());
 				
-				console.log("students[" + index + "]:" + family.students[index].grade);
-				
 				$("#assignment_book_" + i).attr("disabled",true);
 				$("#catechism_book_" + i).attr("disabled",true);
 				$("#bible_" + i).attr("disabled",true);
 				$("#hymnal_" + i).attr("disabled",true);
-			
+
+				if (family.students[index].grade < 0) { 
+					numPreschool++;
+				} else {
+					numK8++;
+				}
+				console.log("preschool: " + numPreschool);
+				console.log("K8       : " + numK8);
+				
 				if (family.students[index].grade >= 3) {
 					family.students[index].additional_fees.extra_curricular = 40; 
-					$("#breakdown_extra_curricular").html(formatCurrency(family.students[index].additional_fees.extra_curricular));
+/* 					$("#breakdown_extra_curricular").html(formatCurrency(family.students[index].additional_fees.extra_curricular)); */
 					$("#bible_" + i).attr("disabled",false);
 					$("#hymnal_" + i).attr("disabled",false); 
 					if (family.students[index].grade >= 5) { 
@@ -206,7 +206,9 @@ $(function(){
 					"background-image": "none"
 				});
 		};
+		recalculateTuition();
 		calculateTotal();
+		updateDisplay();
 	});
 
 	$("#calculate_additional_fees").click(function() {
@@ -251,33 +253,8 @@ $(function(){
 			});
 		};
 		calculateTotal();
+		updateDisplay();
 	});
-	
-	function recalculateTuition() {
-		if (family.members == "yes") {
-			family.tuition = (numAttendees >= 2) ? 2 * member_tuition : numAttendees * member_tuition;
-		} else {
-			family.tuition = (numAttendees >= 3) ? 2.5 * nonmember_tuition : numAttendees * nonmember_tuition;
-		}
-		family.required_fees.book_fee = numAttendees * book_fee;
-		family.required_fees.registration_fee = numAttendees * registration_fee;
-		family.required_fees.tech_fee = numAttendees * tech_fee;
-		
-		$("#breakdown_registration_fee").html(formatCurrency(family.required_fees.registration_fee));
-		$("#breakdown_tuition").html(formatCurrency(family.tuition));
-		$("#breakdown_book_fee").html(formatCurrency(family.required_fees.book_fee));
-		$("#breakdown_tech_fee").html(formatCurrency(family.required_fees.tech_fee));
-		
-		if ($("#paid_in_full:checked").val() == 'on') { 
-			family.deductions.paid_in_full = family.tuition * .05;
-		} else {
-			family.deductions.paid_in_full = 0;
-		}
-		$("#breakdown_paid_in_full").html(formatCurrency(family.deductions.paid_in_full)); 
-/* 		$("#breakdown_paid_in_full").html(family.deductions.paid_in_full.formatCurrency()); */
-		
-		calculateTotal();
-	};
 	
 	$("#dump_button").click(function() {
 		console.log(family);
@@ -285,17 +262,18 @@ $(function(){
 	
 	$("#on_time_registration").click(function() {
 		if (this.checked) {
-			family.deductions.ontime_registration = ontime_registration_deduction * numAttendees;
+			family.deductions.ontime_registration = ontime_registration_deduction * (numK8 + numPreschool);
 		} else {
 			family.deductions.ontime_registration = 0;
 		}
-		$("#breakdown_ontime_registration").html(formatCurrency(family.deductions.ontime_registration));
 		calculateTotal();
+		updateDisplay();
 	});
 	
 	$("#paid_in_full").click(function() {
 		recalculateTuition();
 		calculateTotal();
+		updateDisplay();
 	});
 	
 	$("#tuition_assistance").click(function(){
@@ -304,33 +282,77 @@ $(function(){
 		} else {
 			$("#tuition_assistance_wrap").slideUp();
 			family.deductions.tuition_assistance = 0;
-			$("#breakdown_tuition_assistance").html(formatCurrency(family.deductions.tuition_assistance));
 		};
+		updateDisplay();
 	});
 	
 	$(".tuition_assistance_amount").keyup(function() {
 		family.deductions.tuition_assistance = parseInt($("#tuition_assistance_amount").val());
-		$("#breakdown_tuition_assistance").html(formatCurrency(family.deductions.tuition_assistance));
+		updateDisplay();
 	});
 	
 	$("#calculate_total").click(function() {
 		calculateTotal();
+		updateDisplay();
+		$("#submit_button").attr("disabled",false);
 	});
 	
-	function calculateTotal() {
-		$("#submit_button").attr("disabled",false);
-		$("#breakdown_registration_fee").html(formatCurrency(family.required_fees.registration_fee));
-		$("#breakdown_tuition").html(formatCurrency(family.tuition));
-		$("#breakdown_book_fee").html(formatCurrency(family.required_fees.book_fee));
-		$("#breakdown_tech_fee").html(formatCurrency(family.required_fees.tech_fee));
+	function recalculateTuition() {
+		console.log("numK8       : " + numK8);
+		console.log("numPreschool: " + numPreschool);
+		if (family.members == "yes") {
+			family.k8tuition = (numK8 >= 2) ? 2 * member_tuition : numK8 * member_tuition;
+		} else {
+			family.k8tuition = (numK8 >= 3) ? 2.5 * nonmember_tuition : numK8 * nonmember_tuition;
+		}
 		
-		var required_fees = family.tuition + family.required_fees.registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
+		family.pktuition = numPreschool * preschool_tuition;
+		
+		family.total_tuition = family.pktuition + family.k8tuition;
+		
+/*
+		console.log("K8 tuition: " + family.k8tuition);
+		console.log("PK tuition: " + family.pktuition);
+		console.log("T  tuition: " + family.total_tuition);
+*/
+		
+		family.required_fees.book_fee = numK8 * book_fee;
+		family.required_fees.registration_fee = (numK8 + numPreschool) * registration_fee;
+		family.required_fees.tech_fee = numK8 * tech_fee;
+
+		if ($("#paid_in_full:checked").val() == 'on') { 
+			family.deductions.paid_in_full = family.total_tuition * .05;
+		} else {
+			family.deductions.paid_in_full = 0;
+		}
+		calculateTotal();
+		updateDisplay();
+	};
+	
+	function calculateTotal() {
+		var required_fees = family.k8tuition + family.pktuition + family.required_fees.registration_fee + family.required_fees.book_fee + family.required_fees.tech_fee + family.required_fees.pto_fee;
 		var additional_fees = assignment_book_total + catechism_total + bible_total + hymnal_total + extracurricular_total;
 		var deductions = family.deductions.ontime_registration + family.deductions.paid_in_full + family.deductions.tuition_assistance;
 		console.log("required fees: " + required_fees);
 		console.log("additional fees: " + additional_fees);
 		console.log("deductions: " + deductions);
 		total = required_fees + additional_fees - deductions;
+		
+		updateDisplay();
+	}
+	
+	function updateDisplay() {
+		$("#breakdown_registration_fee").html(formatCurrency(family.required_fees.registration_fee));
+		$("#breakdown_k8tuition").html(formatCurrency(family.k8tuition));
+		$("#breakdown_preschool_tuition").html(formatCurrency(family.pktuition));
+		$("#breakdown_book_fee").html(formatCurrency(family.required_fees.book_fee));
+		$("#breakdown_tech_fee").html(formatCurrency(family.required_fees.tech_fee));
+		$("#breakdown_pto").html(formatCurrency(family.required_fees.pto_fee));
+		
+		$("#breakdown_paid_in_full").html(formatCurrency(family.deductions.paid_in_full));
+		$("#breakdown_ontime_registration").html(formatCurrency(family.deductions.ontime_registration));
+		$("#breakdown_tuition_assistance").html(formatCurrency(family.deductions.tuition_assistance));
+		
 		$("#breakdown_grand_total").html(formatCurrency(total));
 	}
 	
@@ -338,6 +360,7 @@ $(function(){
 		return "$" + input;
 	}
 });
+
 /*
 	function stepTwoTest() {
 		if (($.stepTwoComplete_one == "complete") && ($.stepTwoComplete_two == "complete")) {

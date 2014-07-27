@@ -6,8 +6,9 @@
 	
 	<title>2014/15 School Year Registration</title>
 	
-	<link rel="stylesheet" href="js-form-validation.css">
-	<link rel="stylesheet" href="mtoregistration.css">
+	<link rel="stylesheet" media="all" href="bootstrap.min.css">
+	<link rel="stylesheet" media="all" href="mtoregistration.css">
+	<link rel="stylesheet" media="all" href="js-form-validation.css">
 <!--[if IE]>
 <style>
 	legend { 
@@ -31,9 +32,9 @@
 <body>
 <div id="page-wrap">
 	
-	<h1>2014/15 School Year <span>Registration</h1>
-	<form action="#" method="post">
-		<fieldset id="step_1">
+	<h1>2014/15 School Year <span>Registration</span></h1>
+	<form action="index.html" method="post">
+		<fieldset id="step_1" class="hidden-print">
 			<legend>Students</legend>
 			<label for="members">Members?</label>
 			<select id="members">
@@ -242,17 +243,17 @@
 			</div>
 		
 		<br />
-        <input type="button" id="dump_button" value="Dump JSON" />
+<!--         <input type="button" id="dump_button" value="Dump JSON" /> -->
 		<input type="button" id="add_students" value="Add Students" />
 		</fieldset>
 	
-		<fieldset id="step_2">
+		<fieldset id="step_2" class="hidden-print">
 			<legend>Additional Fees</legend>
 			<div id="students_optional_fees_wrap"></div>
 			<input type="button" id="calculate_additional_fees" value="Calculate Fees" />
 		</fieldset>	
 
-		<fieldset id="step_3">
+		<fieldset id="step_3" class="hidden-print">
 			<legend>Possible Deductions</legend>
 			<input type="checkbox" id="on_time_registration" />
 			<label for="on_time_registration">On-time Registration</label>
@@ -276,7 +277,8 @@
 				<table width="100%">
 					<tr><td colspan="3"><strong>Required Fees</strong></td></tr>
 					<tr><td>&nbsp;</td><td>Registration:</td><td id="breakdown_registration_fee" class="money"></td></tr>
-					<tr><td>&nbsp;</td><td>Tuition:</td><td id="breakdown_tuition" class="money"></td></tr>
+					<tr><td>&nbsp;</td><td>Tuition:</td><td id="breakdown_k8tuition" class="money"></td></tr>
+					<tr><td>&nbsp;</td><td>Pre-K Tuition:</td><td id="breakdown_preschool_tuition" class="money"></td></tr>
 					<tr><td>&nbsp;</td><td>Book Fee:</td><td id="breakdown_book_fee" class="money"></td></tr>
 					<tr><td>&nbsp;</td><td>Tech Fee:</td><td id="breakdown_tech_fee" class="money"></td></tr>
 					<tr><td>&nbsp;</td><td>PTO:</td><td id="breakdown_pto" class="money"></td></tr>
@@ -301,7 +303,7 @@
 					<!-- total -->
 					<tr><td colspan="2"><strong>Total:</strong></td><td id="breakdown_grand_total" class="money"></td></tr>
 				</table>
-				<input type="submit" id="submit_button" class="push" value="Complete Registration" />
+				<input type="submit" id="submit_button" class="push hidden-print" value="Complete Registration" onClick="window.print()" />
 			</div>
 		</fieldset>
 	</form>
@@ -309,38 +311,7 @@
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
 <script src="jquery.min.js"></script>
 <script src="js-form-validation.js"></script>
+<script src="bootstrap.min.js"></script>
 <!-- <script src="jquery.formatCurrency-1.4.0.min.js"></script> -->
 </body>
 </html>
-
-<!--
-			<fieldset id="step_2">
-				<legend>Step 2</legend>
-				<p>Would you like your company name on your badges?</p>
-				<input type="radio" id="company_name_toggle_on" name="company_name_toggle_group" />
-				<label for="company_name_toggle_on">Yes</label>
-				&emsp;
-				<input type="radio" id="company_name_toggle_off" name="company_name_toggle_group" />
-				<label for="company_name_toggle_off">No</label>
-				
-				<div id="company_name_wrap">
-					<label for="company_name">Company Name:</label>
-					<input type="text" id="company_name" />
-				</div>
-			
-				<div class="push">			
-					<p>Will anyone in your group require special accommodations?</p>
-					<input type="radio" id="special_accommodations_toggle_on" name="special_accommodations_toggle" />
-					<label for="special_accommodations_toggle_on">Yes</label>
-					&emsp;
-					<input type="radio" id="special_accommodations_toggle_off" name="special_accommodations_toggle" />
-					<label for="special_accommodations_toggle_off">No</label>
-				</div>
-				<div id="special_accommodations_wrap">
-					<label for="special_accomodations_text">
-						Please explain below:
-					</label>
-					<textarea rows="10" cols="10" id="special_accomodations_text"></textarea>
-				</div>
-			</fieldset>
--->
