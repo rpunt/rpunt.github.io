@@ -8,8 +8,8 @@ body {
 }
 
 #page-wrap { 
-	width: 960px;
-	margin: 80px auto;
+/* 	width: 960px; */
+/* 	margin: 80px auto; */
 	overflow: hidden;
 }
 
@@ -48,11 +48,8 @@ td.money {
 }
 
 fieldset {
-	width: 280px; 
-	padding: 15px; 
-	float: left; 
-	border: none;
-	margin: 0 10px 0 0; 
+	border: 1px solid green;
+/* 	margin: 0 10px 0 0;  */
 	}
 	fieldset#step_1	{ 
 		background: #b2e7ca; 
@@ -65,8 +62,10 @@ fieldset {
 	}
 	fieldset#step_4 { 
 		background: #fff; 
+/*
 		margin-top: 5px;
 		float: right;
+*/
 	}
 
 legend { 
