@@ -1,5 +1,5 @@
 ---
-type: page
+type: pages
 ---
 	
 ### Objective
