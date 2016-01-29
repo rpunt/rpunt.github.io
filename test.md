@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,7 +162,7 @@ body {
 		Citrix
 		
 		### Certifications:
-		
+
 		CompTIA A+
 
 	</div>
