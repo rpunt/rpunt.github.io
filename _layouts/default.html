@@ -1,83 +1,11 @@
 {% assign baseurl = site.baseurl %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Ryan Punt</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/css/bootstrap-theme.min.css" type="text/css" media="screen" />
-<style type="text/css">
-body {
-  padding-top: 60px;
-}
 
-.navbar-inverse .navbar-nav>li>a {
-        color: #fff;
-        font-weight: bolder;
-}
-.navbar-inverse {
-  background: #003878;
-  color: #fff;
-  border-bottom: 3px solid #0fa1e0;
-}
-.navbar-inverse .navbar-brand {
-  color: #fff;
-}
-.navbar-toggle {
-  background: #0fa1e0;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background: #0fa1e0;
-}
-.center.navbar .nav, .center.navbar .nav > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-    *zoom:1; /* hasLayout ie7 trigger */
-    vertical-align: top;
-}
-.center .navbar-inner {
-    text-align:center;
-}
-
-@media print {
-  .navbar {
-    display: none !important;
-  }
-  body {
-    padding-top: 0px;
-  }
-}
-</style>
-</head>
-
+{% include head.html %}
 <body>
-<div class="hidden-print navbar navbar-inverse navbar-fixed-top center">
-  <div class="navbar-inner">
-    <div class="container">
-      <div class="navbar-header">
-        <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- text logo on mobile view -->
-        <a href="index.html" class="navbar-brand visible-xs">Ryan Punt</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="https://github.com/rpunt">GitHub</a></li>
-          <li><a href="https://gist.github.com/rpunt/">Gists</a></li>
-          <li><a href="http://www.linkedin.com/in/rpunt">LinkedIn</a></li>
-          <li><a href="mailto:ryan@mirum.org?Subject=Contact%20from%20mirum.org">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+
+{% include navbar.html %}
 
 <div class="row">
   <div class="col-lg-2 col-md-2 col-sm-2"></div>
@@ -93,18 +21,9 @@ body {
   </div>
   <div class="col-lg-2 col-md-2 col-sm-2"></div>
 </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-94398-1', 'mirum.org');
-  ga('send', 'pageview');
+{% include scripts.html %}
 
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
 
