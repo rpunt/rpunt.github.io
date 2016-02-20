@@ -1,0 +1,21 @@
+{% assign baseurl = site.baseurl %}
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+{% include navbar.html %}
+
+<div class="row">
+  <div class="col-lg-2 col-md-2 col-sm-2"></div>
+  <div class="col-lg-8 col-md-8 col-sm-8 content-body">
+
+    {{ content }}
+
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2"></div>
+</div>
+{% include scripts.html %}
+</body>
+</html>
+
