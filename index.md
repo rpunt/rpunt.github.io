@@ -20,6 +20,7 @@ Senior systems administrator with 16 years of professional experience. Proven ex
 
 **Position:** Sr. Web Operations Engineer<br />
 **Duration:** February 2016 - Present<br />
+**Resources:** Amazon Web Services; Opscode Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
 
 #### Qterics, Plymouth, MN
 
@@ -71,7 +72,7 @@ Authored all daily financial reports (bookings, shipments, et. al) for presentat
 
 ### Language, Software and Operating System Proficiencies
 
-Apache, BASH, BIND, Opscode Chef, CSS, HP SIM, HP-UX, HTML, IIS, Linux, MobileIron MDM, MS Exchange, MySQL, Nginx, Nimsoft NimBUS, Objective C, OS X, Perl, PHP, Progress RDBMS, Ruby, Samba, SQL, Tomcat, VBScript, VMware vSphere, Windows
+Apache, BASH, BIND, Opscode Chef, CSS, HP SIM, HP-UX, HTML, IIS, Linux, MobileIron MDM, MS Exchange, MySQL, Nginx, Nimsoft NimBUS, Objective C, OS X, Perl, PHP, Ruby, Samba, Sensu, SQL, Tomcat, VBScript, VMware vSphere, Windows
 
 ### Training:
 
