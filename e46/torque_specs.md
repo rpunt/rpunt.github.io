@@ -2,7 +2,9 @@
 layout: e46
 ---
 
+
 ##Torque Specs
+
 
 ###Engine/Transmission/Drivetrain
 
@@ -59,6 +61,7 @@ M7 Nuts | 11 | 15  
 M8 Nuts | 16 | 22  
 DISA Screws | 7 | 10  
 
+
 ###Suspension & Braking
 
 Description | FtLb | NM
@@ -92,6 +95,7 @@ Rear Wheel Bearing Axel Bolt Release | 157.8 | 214  
 Rear Axel Bolts to Rear Diff | 73.75  | 100  
 Rear Lower Strut Mount Bolt | 84.8 | 115
 2 Lower Front Strut Mount Bolts | 84.8 | 115
+
 
 ### Driveshaft
 
