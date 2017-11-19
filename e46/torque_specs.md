@@ -5,6 +5,7 @@ layout: e46
 ##Torque Specs
 
 ###Engine/Transmission/Drivetrain
+
 Description | FtLb |NM
 ||
 **Oil Change**||
@@ -59,6 +60,7 @@ M8 Nuts | 16 | 22  
 DISA Screws | 7 | 10  
 
 ###Suspension & Braking
+
 Description | FtLb | NM
 ||
 Caliper Guide Bolts | 22 | 30
@@ -92,6 +94,7 @@ Rear Lower Strut Mount Bolt | 84.8 | 115
 2 Lower Front Strut Mount Bolts | 84.8 | 115
 
 ### Driveshaft
+
 Description | FtLb | NM
 ||
 Driveshaft to Rear Diff | 48.7 | 66
