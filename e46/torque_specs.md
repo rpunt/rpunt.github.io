@@ -2,17 +2,16 @@
 layout: e46
 ---
 
+## e46 Torque Specs
 
-##Torque Specs
-
-
-###Engine/Transmission/Drivetrain
+### Engine/Transmission/Drivetrain
 
 | Description                                                                             | FootPounds | NewtonMeters |
 | --------------------------------------------------------------------------------------- | ---------: | -----------: |
 | **Oil Change**                                                                          |            |              |
 | Oil Filter Housing                                                                      |       18.5 |           25 |
 | Oil Filter Drain Plug                                                                   |       18.5 |           25 |
+|                                                                                         |            |              |
 | **Manual Transmission Oil Change**                                                      |            |              |
 | **5 Speed Manual**                                                                      |            |              |
 | Drain & Fill Plugs                                                                      |         37 |           50 |
@@ -32,7 +31,7 @@ layout: e46
 | **VANOS**                                                                               |            |              |
 | VANOS Oil Line Banjo Bolt                                                               |       23.5 |           32 |
 | Bolts Holding the VANOS onto the top of the Motor (Nuts & Stand-Offs + 1 Securing Bolt) |          6 |            8 |
-| Reverse-Thread VANOS->Cam bolts                                                         |          6 |            8 |
+| Reverse-Thread VANOS-to-Cam bolts                                                       |          6 |            8 |
 | VANOS Piston Plug Caps (the biggest thing you have to screw down in VANOS job)          |         37 |           50 |
 |                                                                                         |            |              |
 | Spark Plugs                                                                             |         22 |           30 |
@@ -42,8 +41,10 @@ layout: e46
 | Main Belt                                                                               |       17.7 |           24 |
 | A/C Belt                                                                                |       34.7 |           47 |
 | Drive Line Belt Pully                                                                   |       34.7 |           47 |
-| Thermostat (1 of 3 Identical Bolts, Part Number 11531740317)                            |        7.3 |          9.9 |
-| 1 of 1 Bolts (Part Number 11531740316)                                                  |       17.7 |           24 |
+|                                                                                         |            |              |
+| **Thermostat**                                                                          |            |              |
+| 1 of 3 Identical Bolts, Part Number 11531740317                                         |        7.3 |          9.9 |
+| 1 of 1 Bolts, Part Number 11531740316                                                   |       17.7 |           24 |
 |                                                                                         |            |              |
 | **Coolant Pump**                                                                        |            |              |
 | Pump                                                                                    |        7.4 |           10 |
@@ -66,7 +67,7 @@ layout: e46
 | DISA Screws                                                                             |          7 |           10 |
 
 
-###Suspension & Braking
+### Suspension & Braking
 
 | Description                                                                      | FootPounds | NewtonMeters |
 | -------------------------------------------------------------------------------- | ---------: | -----------: |
