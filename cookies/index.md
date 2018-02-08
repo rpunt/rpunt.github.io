@@ -1,8 +1,6 @@
 ---
-layout: e46
+layout: cookies
 ---
-
-### Cookie Inventory
 
 | Description              |  Inventory |
 | -------------------------| ---------: |
