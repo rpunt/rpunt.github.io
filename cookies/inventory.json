@@ -1,0 +1,32 @@
+{
+  "Cookie Inventory": [
+    {
+      "name": "Thin Mints",
+      "inventory": "14"
+    },
+    {
+      "name": "Peanut Butter Sandwiches",
+      "inventory": "3"
+    },
+    {
+      "name": "Lemonades",
+      "inventory": "3"
+    },
+    {
+      "name": "Shortbread",
+      "inventory": "3"
+    },
+    {
+      "name": "Caramel Delites",
+      "inventory": "3"
+    },
+    {
+      "name": "Peanut Butter Patties",
+      "inventory": "2"
+    },
+    {
+      "name": "S'mores",
+      "inventory": "1"
+    }
+  ]
+}
