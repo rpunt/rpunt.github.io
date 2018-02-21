@@ -4,7 +4,7 @@ layout: cookies
 
 | Description              |  Inventory |
 | -------------------------| ---------: |
-| Thin Mints               |         14 |
+| Thin Mints               |         10 |
 | Peanut Butter Sandwiches |          3 |
 | Lemonades                |          3 |
 | Caramel Delites          |          3 |
