@@ -2,7 +2,7 @@
   "Cookie Inventory": [
     {
       "name": "Thin Mints",
-      "inventory": "10"
+      "inventory": "6"
     },
     {
       "name": "Peanut Butter Sandwiches",
@@ -19,14 +19,6 @@
     {
       "name": "Caramel Delites",
       "inventory": "3"
-    },
-    {
-      "name": "Peanut Butter Patties",
-      "inventory": "2"
-    },
-    {
-      "name": "S'mores",
-      "inventory": "1"
     }
   ]
 }
