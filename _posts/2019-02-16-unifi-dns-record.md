@@ -1,7 +1,6 @@
 ---
 title: Create a DNS record on a Unifi Security Gateway
 layout: post
-excerpt: So you're running DNSMasq on your Unifi Security Gateway to enable connectivity on your LAN. Great! But you're probably not done...
 ---
 
 {{ layout.title }}
