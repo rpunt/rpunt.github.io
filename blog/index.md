@@ -1,12 +1,13 @@
---
+---
 layout: post
---
+---
 
 <ul>
   {% for post in site.posts %}
-    <li>
+    <!-- <li> -->
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }}
-    </li>
+      <br />
+    <!-- </li> -->
   {% endfor %}
 </ul>
