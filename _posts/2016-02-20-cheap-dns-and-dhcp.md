@@ -1,7 +1,7 @@
---
-title: Cheap DNS and DHCP
+---
 layout: post
---
+title: A Sample Post
+---
 
 Sample link: ![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
 
