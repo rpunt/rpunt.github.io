@@ -1,3 +1,4 @@
+strict_front_matter: true
 permalink: /blog/:categories/:year/:month/:day/:title.html
 defaults:
   -
