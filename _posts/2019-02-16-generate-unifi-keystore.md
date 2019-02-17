@@ -1,7 +1,6 @@
 ---
 title: Generate a replacement keystore for a Unifi Controller
 layout: post
-excerpt: Generating a replacement SSL keystore for your Unifi Controller
 ---
 
 {{ layout.title }}
