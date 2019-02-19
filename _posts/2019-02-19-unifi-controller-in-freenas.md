@@ -5,6 +5,7 @@ title: Installing a Unifi Controller in a Jail on FreeNAS
 
 
 Create a jail and enable VNET:
+
 ![enable VNET in your jail configuration]({{ site.url }}/assets/vnet.png)
 
 SSH to your FreeNAS box and run: ```jexec <jailname> sh # (replace <jailname> with your jail's name)```
