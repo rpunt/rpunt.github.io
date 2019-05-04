@@ -33,9 +33,11 @@ SSH to your FreeNAS box and run:
 
 ```bash
 jexec <jailname> bash
-portsnap fetch extract        # Update ports
+portsnap fetch extract                                    # Update ports
 cd /usr/ports/net-mgmt/unifi5
-service unifi stop            # Stop UniFi
-make reinstall clean          # Build and re-install
-service unifi start           # Start UniFi
+service unifi stop                                        # Stop UniFi
+make deinstall                                            # Uninstall UniFi
+ALLOW_UNSUPPORTED_SYSTEM=yes make install clean BATCH=yes # Build and install
+sysrc unifi_enable=YES                                    # Enable UniFi at boot time
+service unifi start                                       # Start UniFi
 ```
