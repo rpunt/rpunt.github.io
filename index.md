@@ -70,7 +70,7 @@ Authored all daily financial reports (bookings, shipments, et. al) for presentat
 **Duration:** May 2000 – August 2001<br />
 **Resources:** Progress 4GL RDBMS; Perl; Visual Basic; VBScript/ASP; BASH/Korn Shell; Cognos Enterprise Server; Cognos PowerPlay; Cognos Impromptu
 
-### Language, Software and Operating System Proficiencies
+### Language, Software, and Operating System Proficiencies
 
 Apache, BASH, BIND, Opscode Chef, CSS, HP SIM, HP-UX, HTML, IIS, Linux, MobileIron MDM, MS Exchange, MySQL, Nginx, Nimsoft NimBUS, Objective C, OS X, Perl, PHP, Ruby, Samba, Sensu, SQL, Tomcat, VBScript, VMware vSphere, Windows
 
