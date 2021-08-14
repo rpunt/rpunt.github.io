@@ -66,7 +66,6 @@ layout: e46
 | M8 Nuts                                                                                 |         16 |           22 |
 | DISA Screws                                                                             |          7 |           10 |
 
-
 ### Suspension & Braking
 
 | Description                                                                      | FootPounds | NewtonMeters |
@@ -101,7 +100,6 @@ layout: e46
 | Rear Axel Bolts to Rear Diff                                                     |      73.75 |          100 |
 | Rear Lower Strut Mount Bolt                                                      |       84.8 |          115 |
 | 2 Lower Front Strut Mount Bolts                                                  |       84.8 |          115 |
-
 
 ### Driveshaft
 

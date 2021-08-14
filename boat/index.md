@@ -19,21 +19,23 @@ Dimensions: 17 x 27 x 22 x 26
 
 ![Bow - right side cushion](images/bow_side_r.jpg "Bow - right side cushion")
 
-<hr />
+---
 
 ##### Cabin - combo seats (quantity 2)
 
 Dimensions:
+
 * bottom pad: 17 x 17
 * seatback: 17 x 16
 
 ![Cabin combo seats](images/cabin_combo_seats.jpg "Cabin combo seats")
 
-<hr />
+---
 
 ##### Stern seating and pads
 
 Dimensions:
+
 * rear deck: 69 x 17, with an overhanging lip of 7
 * rear seat pads: 16.5 x 16.5
 * engine cover pad: 28.25 x 12.5 x 2

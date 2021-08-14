@@ -26,7 +26,6 @@ Note: If you get an error with the message Ports Collection support for your Fre
 
 If you followed the instructions correctly (and nothing else went wrong), you have a running instance of Ubiquiti's UniFi Controller. Once UniFi has started, you can access it by visiting https://< jail IP > :8443/.
 
-
 ### Upgrading to the latest version
 
 SSH to your FreeNAS box and run:
