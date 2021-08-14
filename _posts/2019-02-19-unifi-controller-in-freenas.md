@@ -3,7 +3,6 @@ layout: post
 title: Installing a Unifi Controller in a Jail on FreeNAS
 ---
 
-
 Create a jail and enable VNET:
 
 ![enable VNET in your jail configuration]({{ site.url }}/assets/vnet.png)
@@ -24,8 +23,7 @@ service unifi start              # Start UniFi
 
 Note: If you get an error with the message Ports Collection support for your FreeBSD version has ended, run make command with ```ALLOW_UNSUPPORTED_SYSTEM=yes make install clean BATCH=yes```
 
-If you followed the instructions correctly (and nothing else went wrong), you have a running instance of Ubiquiti's UniFi Controller. Once UniFi has started, you can access it by visiting https://< jail IP > :8443/.
-
+If you followed the instructions correctly (and nothing else went wrong), you have a running instance of Ubiquiti's UniFi Controller. Once UniFi has started, you can access it by visiting `https://< jail IP > :8443/`.
 
 ### Upgrading to the latest version
 
