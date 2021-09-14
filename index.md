@@ -18,7 +18,7 @@ Senior systems administrator with 19 years of professional experience. Proven ex
 
 #### Best Buy; Richfield, MN
 
-**Position:** Sr. Web Operations Engineer<br />
+**Position:** Principal Engineer, Web Infrastructure<br />
 **Duration:** February 2016 - Present<br />
 **Resources:** Amazon Web Services; Opscode Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
 
