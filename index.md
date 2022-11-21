@@ -81,3 +81,5 @@ Citrix
 ### Certifications
 
 CompTIA A+
+
+<!-- <a rel="me" href="https://hachyderm.io/@rpunt">Mastodon verification</a> -->
