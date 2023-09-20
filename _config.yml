@@ -3,6 +3,7 @@ strict_front_matter: true
 permalink: /blog/:categories/:year/:month/:day/:title.html
 repository: rpunt/rpunt.github.io
 author: Ryan Punt
+google_analytics: G-6N84X0RZC6
 
 ### Build settings ###
 
