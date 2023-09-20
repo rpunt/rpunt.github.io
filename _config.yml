@@ -3,7 +3,6 @@ strict_front_matter: true
 permalink: /blog/:categories/:year/:month/:day/:title.html
 repository: rpunt/rpunt.github.io
 author: Ryan Punt
-twitter_handle: dynomite_joe
 
 ### Build settings ###
 
