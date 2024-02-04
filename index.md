@@ -9,18 +9,25 @@ A systems administrator position in an organization that offers the opportunity 
 
 Senior systems administrator with 24 years of professional experience. Proven expertise utilizing a variety of programming languages and supporting technologies in diverse situations. Exceptional talents in the areas of:
 
-* Server and process automation,
-* Unix/Linux administration,
-* Windows server administration, and
-* iOS device administration.
+* Process automation,
+* Server administration, and
+* Infrastructure-as-code development
 
 ### Professional Experience
 
 #### Best Buy; Richfield, MN
 
+* Chef for IaC
+* Ansible for patching
+* terraform for :allthethings:
+* dcc
+* weekly office hours
+* GHA
+*
+
 **Position:** Principal Engineer, Web Infrastructure<br />
 **Duration:** February 2016 - Present<br />
-**Resources:** Amazon Web Services; Progress Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
+**Resources:** Amazon Web Services; Progress Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; Python; Ansible; PowerShell; VMware vSphere; Terraform.
 
 #### Qterics; Plymouth, MN
 
