@@ -20,7 +20,7 @@ Senior systems administrator with 24 years of professional experience. Proven ex
 
 **Position:** Principal Engineer, Web Infrastructure<br />
 **Duration:** February 2016 - Present<br />
-**Resources:** Amazon Web Services; Opscode Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
+**Resources:** Amazon Web Services; Progress Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
 
 #### Qterics; Plymouth, MN
 
@@ -28,7 +28,7 @@ Automated the creation and maintenance of all new environments. Implemented a se
 
 **Position:** Cloud Operations Lead<br />
 **Duration:** December 2014 - February 2016<br />
-**Resources:** Amazon Web Services; Opscode Chef; Ubuntu Linux; Spring; Nginx; Git; Artifactory; Jenkins; Bash; Perl; Ruby; Python; PowerShell; vSphere 4.
+**Resources:** Amazon Web Services; Progress Chef; Ubuntu Linux; Spring; Nginx; Git; Artifactory; Jenkins; Bash; Perl; Ruby; Python; PowerShell; VMware vSphere.
 
 #### Bluestem Brands; Eden Prairie, MN
 
@@ -36,7 +36,7 @@ Migrated Bluestem’s e-commerce platform to new versions of RedHat Linux and To
 
 **Position:** Sr. Server System Engineer<br />
 **Duration:** May 2013 - December 2014<br />
-**Resources:** Opscode Chef; Red Hat Linux 6; Debian Wheezy; Tomcat 6; Apache; Nginx; Basho Riak; Jenkins; GitHub Enterprise; Windows Server 2003/R2, 2008/R2, 2012/R2; OS X; Bash; Perl; Ruby; PowerShell; vSphere 5; SolarWinds; Graphite; Radware Alteon load balancers.
+**Resources:** Progress Chef; Red Hat Linux 6; Debian Wheezy; Tomcat 6; Apache; Nginx; Basho Riak; Jenkins; GitHub Enterprise; Windows Server 2003/R2, 2008/R2, 2012/R2; OS X; Bash; Perl; Ruby; PowerShell; VMware vSphere; SolarWinds; Graphite; Radware Alteon load balancers.
 
 #### Covidien (Vascular Therapies GBU); Plymouth, MN
 
@@ -44,7 +44,7 @@ Administered hardware and OS for MFGPro ERP environment; migrated MFGPro environ
 
 **Position:** Server Admin III<br />
 **Duration:** February 2010 - May 2013<br />
-**Resources:** Red Hat Linux; Windows Server 2003, 2008, 2008 R2, 2012; OS X; Exchange 2007 and 2010; Progress RDBMS; Bash; Perl; VBScript; PowerShell; vSphere 4; Compellent SANs; HP EVA SANs; HP C-class blade chassis; HP B-class blades; MobileIron MDM platform; Apple iOS developer portal; Objective C; XenApp 6.0.
+**Resources:** Red Hat Linux; Windows Server 2003, 2008, 2008 R2, 2012; OS X; Exchange 2007 and 2010; Progress RDBMS; Bash; Perl; VBScript; PowerShell; VMware vSphere; Compellent SANs; HP EVA SANs; HP C-class blade chassis; HP B-class blades; MobileIron MDM platform; Apple iOS developer portal; Objective C; XenApp 6.0.
 
 #### The Evangelical Lutheran Good Samaritan Society; Sioux Falls, SD
 
@@ -52,7 +52,7 @@ Administered 300 servers whose functions range from file services to enterprise 
 
 **Position:** Network Computer Systems Administrator 2<br />
 **Duration:** August 2005 - February 2010<br />
-**Resources:** Debian and Red Hat Linux; Windows Server and XP; OS X; WYSE thin clients and management software; LANDesk; WebWasher content filters; Squid proxy servers; Samba; VMware ESX; Bash; Perl; VBScript
+**Resources:** Debian and Red Hat Linux; Windows Server and XP; OS X; WYSE thin clients and management software; LANDesk; WebWasher content filters; Squid proxy servers; Samba; VMware vSphere; Bash; Perl; VBScript
 
 #### Sencore Inc.; Sioux Falls, SD
 
@@ -72,7 +72,7 @@ Authored all daily financial reports (bookings, shipments, et. al) for presentat
 
 ### Language, Software, and Operating System Proficiencies
 
-Apache, BASH, BIND, Opscode Chef, CSS, HP SIM, HP-UX, HTML, IIS, Linux, MobileIron MDM, MS Exchange, MySQL, Nginx, Nimsoft NimBUS, Objective C, OS X, Perl, PHP, Ruby, Samba, Sensu, SQL, Tomcat, VBScript, VMware vSphere, Windows
+Apache, BASH, BIND, Progress Chef, CSS, HP SIM, HP-UX, HTML, IIS, Linux, MobileIron MDM, MS Exchange, MySQL, Nginx, Nimsoft NimBUS, Objective C, OS X, Perl, PHP, Ruby, Samba, Sensu, SQL, Tomcat, VBScript, VMware vSphere, Windows
 
 ### Training
 
