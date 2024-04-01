@@ -16,10 +16,15 @@ Senior systems administrator with 24 years of professional experience. Proven ex
 
 ### Professional Experience
 
+#### Cockroach Labs; Remote
+
+**Position:** Staff Enterprise Architect<br />
+**Duration:** April 2024 - present<br />
+
 #### Best Buy; Richfield, MN
 
 **Position:** Principal Engineer, Web Infrastructure<br />
-**Duration:** February 2016 - Present<br />
+**Duration:** February 2016 - March 2024<br />
 **Resources:** Amazon Web Services; Opscode Chef; RedHat Linux; HAProxy; Apache; Git; Artifactory; Jenkins; Bash; Ruby; PowerShell; VMware vSphere.
 
 #### Qterics; Plymouth, MN
