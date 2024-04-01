@@ -10,6 +10,6 @@ updates:
     #   - "github-actions"
     #   - "dependencies"
     commit-message:
-      prefix: "gh"
+      prefix: "GHA"
       include: "scope"
     open-pull-requests-limit: 5
