@@ -19,13 +19,21 @@ layout: e46
 | **6 Speed Manual**                                                                      |            |              |
 | Drain & Fill Plugs                                                                      |       38.5 |           52 |
 | Drain & Fill Plugs (Allen Head)                                                         |         26 |           35 |
-| Automatic Transmission                                                                  |         14 |           19 |
+| **Automatic Transmission**                                                              |            |              |
+| **GM A5S 360R / 390R**                                                                  |            |              |
+| Drain & Fill Plugs                                                                      |         15 |           20 |
+| Pan Bolts                                                                               |          7 |           10 |
+| **ZF 5HP19 (A5S 325Z)**                                                                 |            |              |
+| Drain Plug                                                                              |         26 |           35 |
+| Fill Plug                                                                               |         22 |           30 |
+| Pan Bolts                                                                               |          4 |            6 |
+| Filter Bolts                                                                            |          4 |            6 |
 |                                                                                         |            |              |
 | **Rear Differential**                                                                   |            |              |
 | For Plugs with a Metal Seal Ring                                                        |         48 |           65 |
 | For Plugs with a Rubber O-Ring                                                          |       44.5 |           60 |
 | **Misc**                                                                                |            |              |
-| Oil Filter Housing Bolts                                                                |         15 |           22 |
+| Oil Filter Housing Bolts                                                                |         16 |           22 |
 | Valve Cover (Bolts & Stand-Offs)                                                        |          7 |           10 |
 |                                                                                         |            |              |
 | **VANOS**                                                                               |            |              |
@@ -52,7 +60,7 @@ layout: e46
 |                                                                                         |            |              |
 | **Oil Pan Bolts** (Location-dependant length)                                           |            |              |
 | If they have an "8,8" on the head                                                       |        7.4 |           10 |
-| If they have a 10,9 on the head                                                         |       10.3 |           14 |
+| If they have a 10,9 on the head                                                         |          9 |           12 |
 | Rear Diff Back Cover Bolts                                                              |       34.6 |           47 |
 |                                                                                         |            |              |
 | **Alternator**                                                                          |            |              |
@@ -68,42 +76,43 @@ layout: e46
 
 ### Suspension & Braking
 
-| Description                                                                      | FootPounds | NewtonMeters |
-| -------------------------------------------------------------------------------- | ---------: | -----------: |
-| Caliper Guide Bolts                                                              |         22 |           30 |
-| Wheel/Rim Lug Nut                                                                |         87 |          118 |
-|                                                                                  |            |              |
-| **Control Arms**                                                                 |            |              |
-| Control Arm Bushing                                                              |         44 |           59 |
-| Inner Ball Joint to Subframe                                                     |         66 |         89.5 |
-| Outer Ball Joint to Steering Arm                                                 |         48 |           65 |
-| Outer tie rod -> Connecting to Steering Arm                                      |         48 |           65 |
-| Outer tie rod end lock nut 33 ft lb (what's in the center of the entire tie rod) |         33 |        44.75 |
-| Inner Tie Rod to Steering Rack                                                   |     74 + 7 |      100 + 8 |
-|                                                                                  |            |              |
-| **Subframe**                                                                     |            |              |
-| Aluminium Brace Subframe Underplate                                              |       43.5 |           59 |
-| Brake Caliper Mounting Bolts                                                     |         81 |          110 |
-| Rear Trailing Arm - Bracket to Body                                              |         57 |        77.25 |
-| Bushing Through-Bolt                                                             |         81 |          110 |
-| Rear lower control arm to trailing arm bolt                                      |         57 |        77.25 |
-| Front Rear Subframe Bolts                                                        |       66.3 |           90 |
-| Rear Rear Subframe Bolts                                                         |       57.8 |           77 |
-|                                                                                  |            |              |
-| **Rear Diff**                                                                    |            |              |
-| 1 Front Rear Diff Mount Bolt                                                     |        128 |          174 |
-| 2 Rear Rear Diff Mount Bolts                                                     |         70 |           95 |
-| Guibo to Transmission/Driveshaft                                                 |         74 |          100 |
-| Driveshaft to Rear Differential Flange                                           |         63 |           85 |
-| Front Wheel Bearing Axel Bolt Release                                            |      157.8 |          214 |
-| Rear Wheel Bearing Axel Bolt Release                                             |      157.8 |          214 |
-| Rear Axel Bolts to Rear Diff                                                     |      73.75 |          100 |
-| Rear Lower Strut Mount Bolt                                                      |       84.8 |          115 |
-| 2 Lower Front Strut Mount Bolts                                                  |       84.8 |          115 |
+| Description                                                                             | FootPounds | NewtonMeters |
+| --------------------------------------------------------------------------------        | ---------: | -----------: |
+| Caliper Guide Bolts                                                                     |         22 |           30 |
+| Wheel/Rim Lug Nut                                                                       |         87 |          118 |
+|                                                                                         |            |              |
+| **Control Arms**                                                                        |            |              |
+| Control Arm Bushing                                                                     |         44 |           59 |
+| Inner Ball Joint to Subframe                                                            |         66 |         89.5 |
+| Outer Ball Joint to Steering Arm                                                        |         48 |           65 |
+| Outer tie rod -> Connecting to Steering Arm                                             |         48 |           65 |
+| Outer tie rod end lock nut 33 ft lb (what's in the center of the entire tie rod)        |         33 |        44.75 |
+| Inner Tie Rod to Steering Rack                                                          |     74 + 7 |     100 + 10 |
+|                                                                                         |            |              |
+| **Subframe**                                                                            |            |              |
+| Aluminium Brace Subframe Underplate                                                     |       43.5 |           59 |
+| Brake Caliper Mounting Bolts                                                            |         81 |          110 |
+| Rear Trailing Arm - Bracket to Body                                                     |         57 |        77.25 |
+| Bushing Through-Bolt                                                                    |         81 |          110 |
+| Rear lower control arm to trailing arm bolt                                             |         81 |          110 |
+| Front Rear Subframe Bolts                                                               |       66.3 |           90 |
+| Rear Rear Subframe Bolts                                                                |         57 |           77 |
+|                                                                                         |            |              |
+| **Rear Diff**                                                                           |            |              |
+| 2 Front Rear Diff Mount Bolts                                                           |         70 |           95 |
+| 1 Rear Rear Diff Mount Bolt                                                             |        128 |          174 |
+| Guibo to Transmission/Driveshaft                                                        |         74 |          100 |
+| Driveshaft to Rear Differential Flange                                                  |         63 |           85 |
+| Front Wheel Bearing Axel Bolt Release                                                   |        214 |          290 |
+| Rear Wheel Bearing Axel Bolt Release                                                    |        184 |          250 |
+| Rear Axel Bolts to Rear Diff                                                            |      73.75 |          100 |
+| Rear Lower Strut Mount Bolt                                                             |         74 |          100 |
+| Front Strut to Steering Knuckle — Pinch Bolt, 1 bolt (non-M, replace-once)              |         60 |           81 |
+| Front Strut to Steering Knuckle — 3-bolt knuckle (M3 / M-style)                         |         79 |          107 |
 
 ### Driveshaft
 
-| Description             | FootPounds | NewtonMeters |
-| ----------------------- | ---------: | -----------: |
-| Driveshaft to Rear Diff |       48.7 |           66 |
-| Driveshaft to Trans     |       84.8 |          115 |
+| Description                                                                             | FootPounds | NewtonMeters |
+| -----------------------                                                                 | ---------: | -----------: |
+| Driveshaft to Rear Diff                                                                 |         63 |           85 |
+| Driveshaft to Trans                                                                     |         74 |          100 |
