@@ -18,10 +18,15 @@ Senior systems administrator with 24 years of professional experience. Proven ex
 
 #### Cockroach Labs; Remote
 
+Design, deploy, and tune resilient, geo-distributed CockroachDB clusters for enterprise customers across cloud and on-premises environments. Lead operational support for production deployments, troubleshooting incidents and performance bottlenecks directly with customer engineering teams to hit availability and performance targets. Build automation and tooling that provision, configure, and operate production clusters, and write reusable scripts and integrations that streamline cluster management and diagnostics. Lead proofs-of-concept and reference deployments, and establish operational runbooks and best practices that translate complex requirements into repeatable, supportable architectures.
+
 **Position:** Staff Enterprise Architect<br />
 **Duration:** April 2024 - present<br />
+**Resources:** CockroachDB; Amazon Web Services; Google Cloud Platform; Kubernetes; Terraform; Go; Python; Bash; PostgreSQL; Prometheus; Grafana.
 
 #### Best Buy; Richfield, MN
+
+Served on the leadership team setting technical direction for the web infrastructure powering BestBuy.com, one of the highest-traffic retail platforms in the U.S. Focused on platform-agnostic automation, building configuration-managed provisioning and tooling that standardized server builds and eliminated manual setup consistently across on-premises VMware vSphere and cloud environments. Helped define infrastructure standards, automation patterns, and operational practices adopted across teams. Drove capacity planning and operational readiness to keep the environment resilient through peak events such as Black Friday and holiday traffic, and mentored engineers as a senior technical authority for web infrastructure.
 
 **Position:** Principal Engineer, Web Infrastructure<br />
 **Duration:** February 2016 - March 2024<br />
@@ -29,7 +34,7 @@ Senior systems administrator with 24 years of professional experience. Proven ex
 
 #### Qterics; Plymouth, MN
 
-Automated the creation and maintenance of all new environments. Implemented a service discovery protocol for 2 new environments. Migrated legacy infrastructure into full configuration management. Implemented a patching schedule for servers which previously hadn't been patched in 4 years. Managed on-premises networking equipment and VPN gateways.
+Automated the provisioning and ongoing maintenance of all new environments and brought legacy infrastructure under full configuration management. Implemented a service discovery protocol across 2 new environments. Established a recurring patching schedule for a server fleet that had gone unpatched for 4 years. Managed on-premises networking equipment and VPN gateways.
 
 **Position:** Cloud Operations Lead<br />
 **Duration:** December 2014 - February 2016<br />
@@ -37,7 +42,7 @@ Automated the creation and maintenance of all new environments. Implemented a se
 
 #### Bluestem Brands; Eden Prairie, MN
 
-Migrated Bluestem’s e-commerce platform to new versions of RedHat Linux and Tomcat, implementing a completely configuration-managed environment. Implemented and managed Bluestem’s GitHub Enterprise installation. Developed an intelligent API router for distribution of internal API endpoints across multiple server farms. Automated the provisioning of all new Linux servers; highlights include a 5-minute spin-up time, full configuration management, and automatic DNS management. Automated deployment of app server code for Bluestem’s e-commerce sites; all manual processes were completely eliminated, and code cannot be deployed in a manner that negatively affects customers.
+Migrated Bluestem’s e-commerce platform to current releases of Red Hat Linux and Tomcat within a fully configuration-managed environment. Stood up and administered the company’s GitHub Enterprise installation. Built an intelligent API router that distributed internal API endpoints across multiple server farms. Automated provisioning of all new Linux servers, achieving 5-minute spin-up with full configuration management and automatic DNS registration. Automated application code deployment for Bluestem’s e-commerce sites, eliminating every manual step and making it impossible to deploy in a way that negatively affects customers.
 
 **Position:** Sr. Server System Engineer<br />
 **Duration:** May 2013 - December 2014<br />
@@ -45,7 +50,7 @@ Migrated Bluestem’s e-commerce platform to new versions of RedHat Linux and To
 
 #### Covidien (Vascular Therapies GBU); Plymouth, MN
 
-Administered hardware and OS for MFGPro ERP environment; migrated MFGPro environment from Power3-era IBM hardware to HP Blades running Linux. Administered HP SIM installation to reduce hardware-related outages. Administered Nimsoft Nimbus NMS; responsible for system outage notifications for all GBU-specific computing infrastructure. Administered all GBU-specific Windows servers (comprised of a mix of 2003, 2008, 2008 R2, and 2012). Administered GBU VMWare ESX infrastructure, which hosts 90% of all GBU computing infrastructure. Installed, configured, and administered the Covidien-wide MobileIron environment for iOS device management; 15,200 iOS devices under management. Developed code-signing infrastructure for in-house iOS apps developed by third-party developers, enabling app distribution to field staff. Deployed a continuous-integration and build server for in-house Objective-C development. Developed and deployed three in-house iPad apps, and two in-house iPhone apps. Responsible for all Citrix Xenapp administration in the VT GBU.
+Administered the hardware and operating systems for the MFGPro ERP environment, migrating it from Power3-era IBM hardware to Linux on HP blades. Deployed HP SIM to reduce hardware-related outages and administered Nimsoft NimBUS for outage notification across all GBU-specific computing infrastructure. Managed every GBU-specific Windows server (a mix of 2003, 2008, 2008 R2, and 2012) and the VMware ESX infrastructure hosting 90% of GBU computing. Installed, configured, and administered the Covidien-wide MobileIron environment for iOS device management, with 15,200 devices under management. Built code-signing infrastructure for in-house iOS apps developed by third-party developers, enabling distribution to field staff, and deployed a continuous-integration build server for in-house Objective-C development. Developed and deployed three in-house iPad apps and two iPhone apps, and owned all Citrix XenApp administration in the VT GBU.
 
 **Position:** Server Admin III<br />
 **Duration:** February 2010 - May 2013<br />
@@ -53,7 +58,7 @@ Administered hardware and OS for MFGPro ERP environment; migrated MFGPro environ
 
 #### The Evangelical Lutheran Good Samaritan Society; Sioux Falls, SD
 
-Administered 300 servers whose functions range from file services to enterprise authentication. Supervised a team of three; oversaw the day-to-day operation and support for 3,500 end-user computers on the 250-site corporate WAN; 219 time clocks; and the use of LANDesk for systems management and patching. Virtualized 39 servers, simultaneously providing for disaster recovery and retiring 39 pieces of legacy hardware. Managed, to completion, the in-field replacement of 205 servers. Managed, to completion, the in-field replacement of 3,500 client computers; automated the setup process to allow deployment with zero user interaction. Implemented disaster recovery plans for 5 applications and 25 servers. Implemented access controls on our Macintosh environment via the corporate LDAP directory as well as systems management software for the clients.
+Administered 300 servers spanning functions from file services to enterprise authentication. Supervised a team of three and oversaw day-to-day operation and support of 3,500 end-user computers across a 250-site corporate WAN, 219 time clocks, and LANDesk for systems management and patching. Virtualized 39 servers, simultaneously enabling disaster recovery and retiring 39 pieces of legacy hardware. Managed to completion the in-field replacement of 205 servers and of 3,500 client computers, automating client setup for zero-touch deployment. Implemented disaster recovery plans covering 5 applications and 25 servers, and enforced access controls on the Macintosh environment through the corporate LDAP directory and client systems-management software.
 
 **Position:** Network Computer Systems Administrator 2<br />
 **Duration:** August 2005 - February 2010<br />
@@ -61,7 +66,7 @@ Administered 300 servers whose functions range from file services to enterprise 
 
 #### Sencore Inc.; Sioux Falls, SD
 
-Responsible for all Active Directory and Exchange Server administration. Duties included GPO creation, replication scheme setup and maintenance, and disaster recovery planning. Wrote a custom printer driver, which allowed database and financial reports to be printed directly to PDF and realizing a savings of 300,000 printed pages per calendar year. Migrated HP-UX hardware, software, and database systems to updated versions of each, achieving the mandated zero-downtime project goal. Managed IT helpdesk; responsible for end-user support in a Windows XP environment. Administered the day-to-day operations of both Unix and Windows servers. Served as Webmaster for Corporate Intranet.
+Owned all Active Directory and Exchange Server administration, including GPO creation, replication scheme setup and maintenance, and disaster recovery planning. Wrote a custom printer driver that sent database and financial reports directly to PDF, saving 300,000 printed pages per calendar year. Migrated HP-UX hardware, software, and database systems to updated versions of each while meeting the mandated zero-downtime project goal. Managed the IT helpdesk and end-user support across a Windows XP environment, administered the day-to-day operations of both Unix and Windows servers, and served as webmaster for the corporate intranet.
 
 **Position:** Systems Analyst 2<br />
 **Duration:** October 2001 – May 2005<br />
@@ -69,7 +74,7 @@ Responsible for all Active Directory and Exchange Server administration. Duties 
 
 #### Pella Corporation; Pella, IA
 
-Authored all daily financial reports (bookings, shipments, et. al) for presentation to Executive Management. Acted as Webmaster for the financial reporting division of Corporate Intranet. Implemented a “Metrics Dashboard” Intranet site for financial report distribution. Deployed custom OLAP queries in the form of Cognos PowerCubes for user data analysis. Maintained 3 Impromptu Catalogs and 30 custom PowerCubes on a weekly build schedule. Served as application/systems administrator for contact center, customer service, and order entry application groups.
+Authored all daily financial reports (bookings, shipments, and the like) for presentation to executive management, and acted as webmaster for the financial reporting division of the corporate intranet. Implemented a “Metrics Dashboard” intranet site for financial report distribution and delivered custom OLAP analysis through Cognos PowerCubes. Maintained 3 Impromptu catalogs and 30 custom PowerCubes on a weekly build schedule, and served as application/systems administrator for the contact center, customer service, and order entry application groups.
 
 **Position:** Systems Engineer<br />
 **Duration:** May 2000 – August 2001<br />
@@ -85,4 +90,5 @@ Citrix
 
 ### Certifications
 
-CompTIA A+
+* CockroachDB Certified Developer; Cockroach Labs
+* CompTIA A+
